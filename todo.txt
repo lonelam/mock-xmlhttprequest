@@ -1,0 +1,74 @@
+Rollup
+	code examples too long
+	import type { RollupOptions } from 'rollup'; if using YS
+	code examples of "output.minifyInternalExports" don't match for importantValue.
+	wrong MD header for "output.sourcemapBaseUrl"
+
+https://basarat.gitbook.io/typescript/type-system/lib.d.ts
+
+https://medium.com/codex/bundling-a-typescript-library-for-node-with-rollup-js-2c8add5e736f
+  https://levelup.gitconnected.com/node-typescript-mocha-eslint-efad2e3d2943
+  https://stackoverflow.com/questions/35470511/setting-up-tsconfig-with-spec-test-folder
+https://github.com/PopGoesTheWza/ts-gas-project-starter
+
+  https://gils-blog.tayar.org/posts/using-jsm-esm-in-nodejs-a-practical-guide-part-3/
+  https://formidable.com/blog/2021/node-esm-and-exports/
+  https://medium.com/digio-australia/migrating-an-npm-package-to-use-es-modules-d59877963d61
+  https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-get-along-9617135eeca1
+  https://medium.com/dazn-tech/publishing-npm-packages-as-native-es-modules-41ffbc0a9dea
+
+  https://dev.to/lampewebdev/stop-usuing-this-instead-use-globalthis-for-global-variables-2bc1
+  https://blog.logrocket.com/what-is-globalthis-why-use-it/
+  https://bobbyhadz.com/blog/typescript-extend-globalthis-node
+  https://stackoverflow.com/questions/59459312/using-globalthis-in-typescript
+  https://javascript.plainenglish.io/typescript-and-global-variables-in-node-js-59c4bf40cb31
+
+https://github.com/microsoft/TypeScript/issues/46452
+https://github.com/microsoft/TypeScript/issues/37582
+https://www.typescriptlang.org/docs/handbook/esm-node.html
+https://stackoverflow.com/questions/59787574/typescript-tsconfig-settings-for-node-js-12
+
+https://blog.theodo.com/2021/04/library-tree-shaking/
+
+
+  https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta/#supporting-lib-from-node_modules
+
+    "exports": {
+        ".": {
+            // Entry-point for TypeScript resolution - must occur first!
+            "types": "./types/index.d.ts",
+            // Entry-point for `import "my-package"` in ESM
+            "import": "./esm/index.js",
+            // Entry-point for `require("my-package") in CJS
+            "require": "./commonjs/index.cjs",
+        },
+    },
+    // CJS fall-back for older versions of Node.js
+    "main": "./commonjs/index.cjs",
+    // Fall-back for older versions of TypeScript
+    "types": "./types/index.d.ts"
+
+check configs
+options API
+check readme examples match tests
+  Deprecated MockXhrServer.xhrMock. Use MockXhrServer.MockXhr instead.
+  Document requestHeaders: HeadersContainer from mock
+  update readme about remove setTimeout() (setTimeout(() => onSend.call(this, this), 0);)
+  update readme for chaining of static flags/hooks
+FIXME
+
+Release notes:
+deps
+Use Promise.resolve() instead of setTimeout() for callbacks
+TypeScript so more accurate typings
+MockXhr.getResponseHeadersHash()
+package.json entry points
+docs and quick start
+Removed noop setters from readOnly attributes
+Fixed bug where event hander properties were not called in the right order
+Fixed bug where event listener object callbacks did not receive the event as argument
+Fixed bug where an event listener was called despite being removed by a previous event listener in the same dispatchEvent() call
+
+
+AbortSignal
+https://github.com/whatwg/dom/issues/911#issuecomment-727167414
