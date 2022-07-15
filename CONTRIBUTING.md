@@ -17,11 +17,12 @@ If you are familiar enough with Git to do this, make sure your branch is *rebase
 ### Runing the unit tests
 
     $ npm test
+    $ npm run lint
 
-All tests must pass and the included lint step must be successful.
+All tests must pass and the lint step must have no errors.
 
 ## Coding style
-The coding style is based on the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) with few modifications.
+The coding style is based on the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) with a few modifications.
 
 In general:
 * Be consistent with the existing coding style.

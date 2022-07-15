@@ -8,9 +8,8 @@
             "type": "node",
             "request": "launch",
             "name": "Mocha Tests",
-            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/mocha",
             "args": [
-                "--require", "esm",
                 "--timeout", "999999",
                 "--colors",
                 "${relativeFile}"

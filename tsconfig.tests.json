@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/", "test/", "build/"],
+  "compilerOptions": {
+    // ts-node only has experimental support for ES modules for now
+    // https://stackoverflow.com/questions/59042716/trying-es6-style-import-gives-cannot-use-import-statement-outside-a-module
+    // https://github.com/mochajs/mocha-examples/tree/master/packages/typescript#es-modules
+    "module": "commonjs",
+  },
+}
